@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
 
-        <title>AWS - Linbynd Documentation</title>
+        <title>Ansible - Linbynd Documentation</title>
 
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -62,12 +62,12 @@
                             <a href="../../devops_tools">Devops tools</a>
                         </li>
                     
-                        <li class="active">
-                            <a href=".">AWS</a>
+                        <li >
+                            <a href="../../AWS/aws_services">AWS</a>
                         </li>
                     
-                        <li >
-                            <a href="../../Ansible/Ansible_Intro">Ansible</a>
+                        <li class="active">
+                            <a href=".">Ansible</a>
                         </li>
                     
                     </ul>
@@ -97,12 +97,12 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 <li >
-                    <a rel="next" href="../../devops_tools">
+                    <a rel="next" href="../../AWS/aws_services">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../Ansible/Ansible_Intro">
+                    <a rel="prev" href="../../../Databases/databses">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -123,44 +123,28 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#aws-resources">AWS Resources</a></li>
+        <li class="main active"><a href="#ansible-introduction">Ansible Introduction</a></li>
         
-            <li><a href="#for-more-information-linker-for-details">for more information linker for details</a></li>
+            <li><a href="#installation-of-ansible">Installation of Ansible</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="aws-resources">AWS Resources</h1>
+<h1 id="ansible-introduction">Ansible Introduction</h1>
+<p>Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates.</p>
+<p>Ansible’s goals are foremost those of simplicity and maximum ease of use. It also has a strong focus on security and reliability, featuring a minimum of moving parts, usage of OpenSSH for transport (with an accelerated socket mode and pull modes as alternatives), and a language that is designed around auditability by humans – even those not familiar with the program.</p>
+<p>Ansible manages machines in an agentless manner. There is never a question of how to upgrade remote daemons or the problem of not being able to manage systems because daemons are uninstalled. As OpenSSH is one of the most peer reviewed open source components, the security exposure of using the tool is greatly reduced. Ansible is decentralized – it relies on your existing OS credentials to control access to remote machines; if needed it can easily connect with Kerberos, LDAP, and other centralized authentication management systems.</p>
+<h2 id="installation-of-ansible">Installation of Ansible</h2>
 <ul>
-<li>EC2 Instance creation</li>
-<li>Cloudformation</li>
-<li>AutoScaling</li>
-<li>EBS</li>
-<li>VPC</li>
-<li>S3</li>
+<li>
+<p>Installation with Pip on Linux Servers.</p>
+<p><code>$ sudo pip install ansible</code></p>
+<p><code>$ ansible --version</code>
+...<code>ansible 1.8.2</code></p>
+</li>
 </ul>
-<blockquote>
-<p><strong><em> Note Taking information </em></strong></p>
-</blockquote>
-<pre><code>This is riht
-aria2c http://dl.bintray.com/rundeck/rundeck-deb/rundeck-2.4.0-1-GA.deb
-
-#!/usr/bin/env bats
-
-@test "Check if Vagrant User is present" {
-    run bash -c "grep vagrant /etc/passwd"
-    [[ "$output" =~ "vagrant" ]]
-}
-
-@test "Check if rundeck Private Key is present" {
-    run bash -c "grep rundeck ~/.ssh/authorized_keys"
-    [[ "$output" =~ "rundeck" ]]
-}
-</code></pre>
-<h4 id="for-more-information-linker-for-details">for more information <a href="http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_st_no%C2%AE-black_orange-hex.png">linker</a> for details</h4>
-<p><img alt="Imageer" src="http://icons.iconarchive.com/icons/tribalmarkings/colorflow/256/ubuntu-icon.png" title="Optional title" /></p>
 </div>
         </div>
 

@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../../../img/favicon.ico">
 
-        <title>AWS - Linbynd Documentation</title>
+        <title>Redis - Linbynd Documentation</title>
 
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -54,20 +54,20 @@
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Devops <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../../devops_tools">Devops tools</a>
-                        </li>
-                    
-                        <li class="active">
-                            <a href=".">AWS</a>
+                            <a href="../../../Devops/devops_tools">Devops tools</a>
                         </li>
                     
                         <li >
-                            <a href="../../Ansible/Ansible_Intro">Ansible</a>
+                            <a href="../../../Devops/AWS/aws_services">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../../Devops/Ansible/Ansible_Intro">Ansible</a>
                         </li>
                     
                     </ul>
@@ -75,16 +75,16 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../../../Databases/databses">Databses</a>
+                            <a href="../../databses">Databses</a>
                         </li>
                     
-                        <li >
-                            <a href="../../../Databases/Redis/Redis-Sever">Redis</a>
+                        <li class="active">
+                            <a href=".">Redis</a>
                         </li>
                     
                     </ul>
@@ -97,12 +97,12 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 <li >
-                    <a rel="next" href="../../devops_tools">
+                    <a rel="next" href="../../databses">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
-                <li >
-                    <a rel="prev" href="../../Ansible/Ansible_Intro">
+                <li class="disabled">
+                    <a rel="prev" >
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -123,44 +123,24 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#aws-resources">AWS Resources</a></li>
+        <li class="main active"><a href="#redis-server-information">Redis Server Information</a></li>
         
-            <li><a href="#for-more-information-linker-for-details">for more information linker for details</a></li>
+            <li><a href="#installation-with-a-ppa">Installation with a PPA</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="aws-resources">AWS Resources</h1>
-<ul>
-<li>EC2 Instance creation</li>
-<li>Cloudformation</li>
-<li>AutoScaling</li>
-<li>EBS</li>
-<li>VPC</li>
-<li>S3</li>
-</ul>
-<blockquote>
-<p><strong><em> Note Taking information </em></strong></p>
-</blockquote>
-<pre><code>This is riht
-aria2c http://dl.bintray.com/rundeck/rundeck-deb/rundeck-2.4.0-1-GA.deb
-
-#!/usr/bin/env bats
-
-@test "Check if Vagrant User is present" {
-    run bash -c "grep vagrant /etc/passwd"
-    [[ "$output" =~ "vagrant" ]]
-}
-
-@test "Check if rundeck Private Key is present" {
-    run bash -c "grep rundeck ~/.ssh/authorized_keys"
-    [[ "$output" =~ "rundeck" ]]
-}
+<h2 id="redis-server-information">Redis Server Information</h2>
+<p>Redis is an open source, BSD licensed, advanced key-value cache and store. It is often referred to as a data structure server since keys can contain strings, hashes, lists, sets, sorted sets, bitmaps and hyperloglogs.</p>
+<h3 id="installation-with-a-ppa">Installation with a PPA</h3>
+<p>Redis can be installed on Ubuntu and Debian based servers with the following PPA information:</p>
+<pre><code>$ sudo apt-get install -y python-software-properties
+$ sudo add-apt-repository -y ppa:rwky/redis
+$ sudo apt-get update
+$ sudo apt-get install -y redis-server
 </code></pre>
-<h4 id="for-more-information-linker-for-details">for more information <a href="http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_st_no%C2%AE-black_orange-hex.png">linker</a> for details</h4>
-<p><img alt="Imageer" src="http://icons.iconarchive.com/icons/tribalmarkings/colorflow/256/ubuntu-icon.png" title="Optional title" /></p>
 </div>
         </div>
 

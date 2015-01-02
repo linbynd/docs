@@ -7,14 +7,14 @@
         
         
         
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <title>AWS - Linbynd Documentation</title>
+        <title>Databses - Linbynd Documentation</title>
 
-        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="../../../css/prettify-1.0.css" rel="stylesheet">
-        <link href="../../../css/base.css" rel="stylesheet">
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/prettify-1.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -39,7 +39,7 @@
             </button>
 
             <!-- Main title -->
-            <a class="navbar-brand" href="../../..">Linbynd Documentation</a>
+            <a class="navbar-brand" href="../..">Linbynd Documentation</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -49,25 +49,25 @@
             
             
                 <li >
-                    <a href="../../../about">About</a>
+                    <a href="../../about">About</a>
                 </li>
             
             
             
-                <li class="dropdown active">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Devops <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
                         <li >
-                            <a href="../../devops_tools">Devops tools</a>
-                        </li>
-                    
-                        <li class="active">
-                            <a href=".">AWS</a>
+                            <a href="../../Devops/devops_tools">Devops tools</a>
                         </li>
                     
                         <li >
-                            <a href="../../Ansible/Ansible_Intro">Ansible</a>
+                            <a href="../../Devops/AWS/aws_services">AWS</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../Devops/Ansible/Ansible_Intro">Ansible</a>
                         </li>
                     
                     </ul>
@@ -75,16 +75,16 @@
             
             
             
-                <li class="dropdown">
+                <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                     
-                        <li >
-                            <a href="../../../Databases/databses">Databses</a>
+                        <li class="active">
+                            <a href=".">Databses</a>
                         </li>
                     
                         <li >
-                            <a href="../../../Databases/Redis/Redis-Sever">Redis</a>
+                            <a href="../Redis/Redis-Sever">Redis</a>
                         </li>
                     
                     </ul>
@@ -97,12 +97,12 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 <li >
-                    <a rel="next" href="../../devops_tools">
+                    <a rel="next" href="../../Devops/Ansible/Ansible_Intro">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../../Ansible/Ansible_Intro">
+                    <a rel="prev" href="../Redis/Redis-Sever">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -123,52 +123,23 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#aws-resources">AWS Resources</a></li>
-        
-            <li><a href="#for-more-information-linker-for-details">for more information linker for details</a></li>
+        <li class="main active"><a href="#various-databases">Various Databases</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="aws-resources">AWS Resources</h1>
-<ul>
-<li>EC2 Instance creation</li>
-<li>Cloudformation</li>
-<li>AutoScaling</li>
-<li>EBS</li>
-<li>VPC</li>
-<li>S3</li>
-</ul>
-<blockquote>
-<p><strong><em> Note Taking information </em></strong></p>
-</blockquote>
-<pre><code>This is riht
-aria2c http://dl.bintray.com/rundeck/rundeck-deb/rundeck-2.4.0-1-GA.deb
-
-#!/usr/bin/env bats
-
-@test "Check if Vagrant User is present" {
-    run bash -c "grep vagrant /etc/passwd"
-    [[ "$output" =~ "vagrant" ]]
-}
-
-@test "Check if rundeck Private Key is present" {
-    run bash -c "grep rundeck ~/.ssh/authorized_keys"
-    [[ "$output" =~ "rundeck" ]]
-}
-</code></pre>
-<h4 id="for-more-information-linker-for-details">for more information <a href="http://design.ubuntu.com/wp-content/uploads/logo-ubuntu_st_no%C2%AE-black_orange-hex.png">linker</a> for details</h4>
-<p><img alt="Imageer" src="http://icons.iconarchive.com/icons/tribalmarkings/colorflow/256/ubuntu-icon.png" title="Optional title" /></p>
+<h2 id="various-databases">Various Databases</h2>
+<p>This section contains information on various databases</p>
 </div>
         </div>
 
         
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../../../js/prettify-1.0.min.js"></script>
-        <script src="../../../js/base.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script src="../../js/base.js"></script>
     </body>
 </html>
